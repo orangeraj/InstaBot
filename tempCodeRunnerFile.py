@@ -1,0 +1,1 @@
+print('We have liked' + str(like_count) + ' Tweets')
