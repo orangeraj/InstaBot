@@ -5,6 +5,8 @@ from datetime import datetime
 import time
 from os import remove
 
+#openpyxl can be used here to optimize this
+
 captn = ['zero'
 ,'I believe in God, only I spell it Nature. —Frank Lloyd Wright'
 ,'Forget not that the earth delights to feel your bare feet and the winds long to play with your hair. —Khalil Gibran'
@@ -34,12 +36,12 @@ def upload_photo():
     remove('C:\R A J A S\Learn\InstaBot\config\jungli_engineer_uuid_and_cookie.json')
     time.sleep(2)
 
-    bot.login(username = "jungli_engineer", password = "hogrider22")
+    bot.login(username = "id", password = "password")
     time.sleep(5)
     bot.upload_photo(str(i)+'.jpg',caption= captn[i])
     
 
-#if i%2 != 0:
+#if i%2 != 0:  alternate days
 while True:
     upload_photo()
     
